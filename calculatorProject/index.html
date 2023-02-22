@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Average Calculator</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap');
+        </style>
+            
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="img/logo.png" alt="capelo e diploma">
+                <h1>Average Calculator</h1>
+            </header>
+            <form id="activityForm">
+                <input type="text" id="activityName" required placeholder="Name of the activity">
+                <input type="number" id="activityGrade" required placeholder="Grade of the activity" min="0" max="10">
+                <button type="submit">Add Grade</button>
+            </form>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            Name of the Activity
+                        </th>
+                        <th>
+                            Grades
+                        </th>
+                        <th>Approved?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <td>Final Average</td>
+                    <td id="finalGrade">---</td>
+                    <td id="finalGradeResult"><span class="result approved">---</span></td>
+                </tfoot>
+            </table>
+        </div>
+        <script src="./javascript/script.js"></script>
+    </body>
+</html>
